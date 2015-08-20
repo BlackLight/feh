@@ -106,8 +106,8 @@ void init_keyevents(void) {
 	feh_set_kb(&keys.scroll_right_page, 8, XK_Right, 0, 0          , 0, 0);
 	feh_set_kb(&keys.scroll_down_page , 8, XK_Down , 0, 0          , 0, 0);
 	feh_set_kb(&keys.scroll_up_page   , 8, XK_Up   , 0, 0          , 0, 0);
-	feh_set_kb(&keys.prev_img  , 0, XK_Left      , 0, XK_p         , 0, XK_BackSpace);
-	feh_set_kb(&keys.next_img  , 0, XK_Right     , 0, XK_n         , 0, XK_space);
+	feh_set_kb(&keys.prev_img  , 0, XK_Left      , 0, XK_k         , 0, XK_BackSpace);
+	feh_set_kb(&keys.next_img  , 0, XK_Right     , 0, XK_j         , 0, XK_space);
 	feh_set_kb(&keys.jump_back , 0, XK_Page_Up   , 0, XK_KP_Page_Up, 0, 0);
 	feh_set_kb(&keys.jump_fwd  , 0, XK_Page_Down , 0, XK_KP_Page_Down,0,0);
 	feh_set_kb(&keys.jump_random,0, XK_z         , 0, 0            , 0, 0);
@@ -154,7 +154,7 @@ void init_keyevents(void) {
 	feh_set_kb(&keys.mirror, 0, XK_bar, 0, 0, 0, 0);
 	feh_set_kb(&keys.reload_minus, 0, XK_minus, 0, 0, 0, 0);
 	feh_set_kb(&keys.reload_plus, 0, XK_plus, 0, 0, 0, 0);
-	feh_set_kb(&keys.toggle_keep_vp, 0, XK_k, 0, 0, 0, 0);
+	/* feh_set_kb(&keys.toggle_keep_vp, 0, XK_k, 0, 0, 0, 0); */
 
 	home = getenv("HOME");
 	confhome = getenv("XDG_CONFIG_HOME");
